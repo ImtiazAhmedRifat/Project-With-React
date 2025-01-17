@@ -13,11 +13,11 @@ const Player = ({player}) => {
            </div>
            <hr />
            <p className="font-semibold">Rating</p>
-           <div className="grid grid-cols-2">
-            <p>Right Handed Batsman</p>
-            <p className="text-gray-400">Right Handed Batsman</p>
-             <p>Price: ${price}</p>
-             <button className="p-2 rounded-xl border border-gray-300">Choose Player</button>
+           <div className="grid grid-cols-2 justify-center items-center gap-2">
+            <p className="font-semibold">Right Handed Batsman</p>
+            <p className="text-gray-400 font-semibold">Right Handed Batsman</p>
+             <p className="font-bold">Price: ${price}</p>
+             <button className="p-2 text-xl font-semibold rounded-xl border border-gray-300">Choose Player</button>
 
            </div>
            </div>

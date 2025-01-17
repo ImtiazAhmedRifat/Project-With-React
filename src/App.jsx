@@ -2,21 +2,27 @@ import './App.css'
 import Option from './components/Option/Option'
 import Header from './components/Header'
 import Players from './components/Players/Players'
+import { useState } from 'react'
 
 function App() {
-
+     
+    const [coin, setCoin] = useState(0);
+    
+    const setClaimCoin = () => {
+      setCoin(10000);
+    }
 
   return (
     <>
 
 
-      <Header></Header>
+      <Header coin={coin}  setClaimCoin={setClaimCoin}></Header>
 
-       
-      <div className='flex justify-between mt-8'>
-        <Players></Players>
-        <Option></Option>
-      </div>
+      <Option></Option>
+
+      <Players></Players>
+      
+   
 
     </>
   )

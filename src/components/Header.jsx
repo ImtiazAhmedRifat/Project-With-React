@@ -1,5 +1,7 @@
 
-const Header = () => {
+const Header = ({coin, setClaimCoin}) => {
+
+
     return (
         <div>
           <nav className="flex justify-between">
@@ -13,7 +15,7 @@ const Header = () => {
                <li>Teams</li>
                <li>Schedules</li>
               </ul>
-               <button className="font-bold">0 Coin</button>
+               <li className="font-bold list-none">{coin} Coin</li>
             </div>
           </nav>
 
@@ -21,7 +23,7 @@ const Header = () => {
           <img src="../../assets/banner-main.png" alt="" />
           <h1>Assemble Your Ultimate Dream 11 Cricket Team</h1>
           <p>Beyond Boundaries Beyond Limits</p>
-          <button className=" bg-yellow-300 rounded-xl p-2 border-2 border-black text-black">Claim Free Credit</button>
+          <button onClick={()=>setClaimCoin()} className=" bg-yellow-300 rounded-xl p-2 border-2 border-black text-black">Claim Free Credit</button>
           </div>
         </div>
     );
