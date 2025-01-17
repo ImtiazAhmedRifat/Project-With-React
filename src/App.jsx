@@ -23,16 +23,16 @@ function App() {
     })
 
    
-  }
+  };
 
   const setClaimCoin = () => {
     const updatedCoin = coin + 10000;
     setCoin(updatedCoin);
-  }
+  };
   
   const handleDisplay = visible => {
    setVisible(visible)
-  }
+  };
   
 
   return (
@@ -59,6 +59,6 @@ function App() {
   <Footer></Footer>
     </>
   )
-}
+};
 
 export default App

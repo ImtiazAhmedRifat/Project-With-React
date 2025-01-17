@@ -7,12 +7,12 @@ const Players = ({handleSelectedPlayer}) => {
   useEffect(()=>{
     fetch('players.json')
       .then(res => res.json())
-      .then(data => setPlayers(data))
+      .then(data => setPlayers(data));
   }
 
 
 
-    ,[])
+    ,[]);
   return (
 
   
