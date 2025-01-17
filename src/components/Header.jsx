@@ -23,7 +23,9 @@ const Header = ({coin, setClaimCoin}) => {
           <img src="../../assets/banner-main.png" alt="" />
           <h1>Assemble Your Ultimate Dream 11 Cricket Team</h1>
           <p>Beyond Boundaries Beyond Limits</p>
-          <button onClick={()=>setClaimCoin()} className=" bg-yellow-300 rounded-xl p-2 border-2 border-black text-black">Claim Free Credit</button>
+          <button onClick={()=>setClaimCoin()} className="btn bg-yellow-300 rounded-xl p-2 border-2 border-black text-black">Claim Free Credit</button>
+      
+
           </div>
         </div>
     );

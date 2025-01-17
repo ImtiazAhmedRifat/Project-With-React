@@ -1,5 +1,5 @@
 
-const Player = ({player}) => {
+const Player = ({player, handleSelectedPlayer}) => {
             const {price,name,image,category,country_name} = player;
     return (
         <div className="">
@@ -17,7 +17,7 @@ const Player = ({player}) => {
             <p className="font-semibold">Right Handed Batsman</p>
             <p className="text-gray-400 font-semibold">Right Handed Batsman</p>
              <p className="font-bold">Price: ${price}</p>
-             <button className="p-2 text-xl font-semibold rounded-xl border border-gray-300">Choose Player</button>
+             <button onClick={() => handleSelectedPlayer(player)} className="btn p-2 text-xl font-semibold rounded-xl border border-gray-300">Choose Player</button>
 
            </div>
            </div>
